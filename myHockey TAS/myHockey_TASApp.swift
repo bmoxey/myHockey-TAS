@@ -12,6 +12,8 @@ struct myHockey_TASApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .preferredColorScheme(.dark)
+                .environmentObject(TeamsManager())
         }
     }
 }
